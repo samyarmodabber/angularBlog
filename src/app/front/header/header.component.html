@@ -1,0 +1,11 @@
+<header class="w3-container w3-center sticky w3-dark-grey">
+  <div *ngIf="siteInfo" class="w3-row">
+    <h1 class="">
+      <b>{{ siteInfo.title }}</b>
+    </h1>
+    <p class="w3-hide-small ">{{ siteInfo.description }}</p>
+    <div class="">
+      <app-navbar></app-navbar>
+    </div>
+  </div>
+</header>

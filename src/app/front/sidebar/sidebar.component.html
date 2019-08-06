@@ -1,0 +1,61 @@
+<!-- About Card -->
+<div class="w3-card w3-margin w3-margin-top">
+  <img src="" style="width:100%" />
+  <div class="w3-container w3-white">
+    <h4><b>Samyar Modabber</b></h4>
+    <p>
+      samyar.modabber@gmail.com
+    </p>
+  </div>
+</div>
+<hr />
+
+<!-- Posts -->
+<div class="w3-card w3-margin">
+  <div class="w3-container w3-padding">
+    <h4>Popular Posts</h4>
+  </div>
+  <ul class="w3-ul w3-hoverable w3-white">
+    <li class="w3-padding-16" *ngFor="let post of popularArticles">
+      <img
+        src="https://picsum.photos/id/{{ post.id }}/200"
+        alt="Image"
+        class="w3-left w3-margin-right"
+        style="width:50px"
+      />
+      <span class="w3-large">{{ post.title }}</span
+      ><br />
+      <span>Sed mattis nunc</span>
+    </li>
+  </ul>
+</div>
+<hr />
+
+<!-- Labels / tags -->
+<div class="w3-card w3-margin">
+  <div class="w3-container w3-padding">
+    <h4>Tags</h4>
+  </div>
+  <div class="w3-container w3-white">
+    <p>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+        >Angular</span
+      >
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">W3-css</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+        >Personal website</span
+      >
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Blog</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span>
+
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Nodejs</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+        >Expressjs</span
+      >
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">APIs</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+        >MongoDB</span
+      >
+    </p>
+  </div>
+</div>
